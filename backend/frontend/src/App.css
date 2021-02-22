@@ -1,0 +1,217 @@
+/* General CSS*/
+.app-body {
+  width: 55%;
+  max-width: 550px;
+  min-width: 550px;
+  min-height: 90%;
+  background-color: rgb(243, 243, 243);
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 25px;
+  left: 23%;
+  display: inline-block;
+  position: absolute;
+}
+
+.favs-body {
+  width: 55%;
+  max-width: 570px;
+  min-width: 570px;
+  min-height: 90%;
+  background-color: rgb(243, 243, 243);
+  border-radius: 5px;
+  margin: -25px auto;
+  padding: 25px;
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+}
+
+.heading {
+  display: inline-block;
+  width: 100%;
+  margin-top: 0;
+}
+
+.heading-container {
+  display: flex;
+}
+
+/*Result boxes*/
+.item-result {
+  width: 110px;
+  height: auto;
+  background-color: rgb(226, 226, 226);
+  padding: 10px 5px;
+  align-items: center;
+  margin: 15px 17px -10px 0;
+  color: black;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+h4 {
+  font-size: 0.7em;
+  margin: 0 auto;
+  width: 100px;
+}
+
+p {
+  font-size: 0.7em;
+  margin: 5px auto 0;
+  width: 100px;
+}
+
+.search-box {
+  width: 100%;
+  margin: auto;
+}
+
+/* Style buttons */
+.fav-btn {
+  background-color: transparent;
+  border: none;
+  color: rgb(224, 224, 224); 
+  font-size: 16px; 
+  cursor: pointer; 
+  position: relative;
+  bottom: 25px;
+  right: -75px;
+}
+
+.fav-page-btn {
+  width: 10%;
+  font-size: 40px;
+  color: #0230ff;
+}
+
+.fav-close-btn {
+  width: 10%;
+  font-size: 30px;
+  color: #0230ff;
+}
+
+/* Darker background on mouse-over */
+.fav-btn-click {
+  background-color: transparent;
+  border: none; 
+  color: red; 
+  font-size: 16px; 
+  cursor: pointer; 
+  position: relative;
+  bottom: 25px;
+  right: -75px;
+  pointer-events: none;
+}
+
+.delete-fav {
+  background-color: transparent;
+  border: none; 
+  color: rgb(221, 221, 221); 
+  font-size: 16px; 
+  cursor: pointer; 
+  position: relative;
+  bottom: 25px;
+  right: -75px;
+}
+
+/*css to size images of results*/
+.item-image {
+  width: 100px; 
+  height: auto;
+  margin: 10px auto -20px;
+}
+
+.item-image-off {
+  width: 100px; 
+  height: auto;
+  margin: 10px auto 0px;
+}
+
+/*CSS for the labels displayed aboe search dropdown and slider*/
+label {
+  font-size: 0.7em;
+  color: gray;
+  margin-right: 29%;
+}
+
+/*media selection box*/
+.media {
+  width: 30%;
+  height: 1.5em;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  padding-left: 5px;
+}
+
+.search-bar {
+  margin-top: 10px;
+  width: 97%;
+  border: none;
+  border-radius: 3px;
+  height: 1.5em;
+  padding-left: 5px;
+}
+
+/* Slider */
+.slidecontainer {
+  width: 100%; 
+  display: inline;
+  height: 25px;
+  align-items: center;
+  text-align: center;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 60%; 
+  background: #d3d3d3;
+  outline: none; 
+  opacity: 0.6; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; 
+  transition: opacity .2s;
+  height: 10px;
+  margin: 10px 5px 0 20px;
+  padding: 0 auto;
+  border-radius: 5px;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 1.5em;; 
+  height: 1.5em; 
+  background: #0230ff; 
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+  width: 1.5em;; 
+  height: 1.5em; 
+  background: #1d1b7e; 
+  cursor: pointer; 
+  border-radius: 50%;
+}
+
+/*text that displays the limit selected with the slider (to ease user journey)*/
+.result-limit {
+  width: 1.5em;
+  height: 20px;
+  margin: 0;
+  padding: 0 auto;
+  border: none;
+  text-align: center;
+  background-color: rgb(243, 243, 243);
+}
+
